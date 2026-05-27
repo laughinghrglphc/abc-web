@@ -1,0 +1,25 @@
+body{
+    font-family: Arial;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+#contenedor-letras{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.tarjeta-letra{
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    width: 250px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+}
+
+.tarjeta-letra img{
+    width: 100%;
+    border-radius: 10px;
+}
