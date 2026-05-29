@@ -7,7 +7,7 @@ const colores = ['green', 'blue', 'red']
  // color alestorio
 function obtenerColorAleatorio() {
 
-    // aleatorio entre 0 y 2 
+    // aleatorio entre 0 y 2
     const indice = Math.floor(Math.random() * colores.length)
 
     return colores[indice]
@@ -25,3 +25,17 @@ titulos.forEach(function(titulo) {
     })
 
 })
+
+// fetch navbar
+  fetch("navbar.html")
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById("navbar").innerHTML = data;
+    })
+
+// fetch footer
+  fetch("footer.html")
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById("footer").innerHTML = data;
+    })

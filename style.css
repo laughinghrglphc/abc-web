@@ -1,6 +1,3 @@
-body{
-    background-color:gray;
-}
 h3{
     color: green;
 }
@@ -11,4 +8,71 @@ h3{
 
 .rojo{
     color: red;
-}   
+}
+
+body {
+  background-color: #111;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+#abecedario {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.abecedario-container {
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(auto-fit, minmax(250px, 1fr));
+
+  gap: 30px;
+
+  padding: 20px;
+}
+
+.tarjeta-letra {
+
+  background-color: #1d1d1d;
+
+  border-radius: 15px;
+
+  padding: 20px;
+
+  text-align: center;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+
+  color: white
+}
+
+.tarjeta-letra:hover {
+
+  transform: translateY(-5px);
+
+  box-shadow:
+    0 0 20px rgba(255,255,255,0.15);
+}
+
+.tarjeta-letra img {
+
+  display: block;
+
+  margin: 15px auto 0 auto;
+
+  width: 200px;
+
+  height: 200px;
+
+  object-fit: cover;
+
+  border-radius: 12px;
+}
+
+main {
+  padding-top: 50px;
+}
